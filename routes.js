@@ -17,7 +17,7 @@ const requestHandler = (req, res) => {
     const body = [];
 
     req.on("data", (chunk) => {
-      body.push(chunk);
+      body.push(chunk)
     });
 
     return req.on("end", () => {
